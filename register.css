@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url(background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border: 2px solid #d3d3d3;
+  height: 600px;
+  width: 400px;
+  border-radius: 12px;
+}
+form{
+  text-align: center;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.21em;
+}
+.names{
+    display: flex;
+}
+.inbox1 {
+    position: relative;
+    margin-top: 35px;
+    width: 137px;
+    border-bottom: 2px solid white;
+    margin-right: 35px;
+    margin-left: 25px;
+  }
+.inbox {
+  position: relative;
+  margin-top: 35px;
+  width: 335px;
+  border-bottom: 2px solid white;
+  margin-left: 25px;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+  font-size: small;
+}
+.inbox label,
+.inbox1 label {
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+.inbox input, 
+.inbox1 input {
+  width: 90%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-right: 35px;
+  padding-left: 5px;
+}
+p#incorrect{
+  color: red;
+  font-size: 15px;
+  margin-top: 12px;
+}
+button.signin {
+  margin-top: 12px;
+  width: 90%;
+  border-radius: 44px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 1em;
+}
+.register{
+  margin-top: 10px;
+}
+.register p{
+  color: white;
+}
+.register p a{
+  font-weight: 700;
+  text-decoration: none;
+  color: wheat;
+}
+#incorrect-password{
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*For popup Notification*/
+.main-popup{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  transform: translate(0,-50%) scale(0.1);
+  transition: .5s;
+}
+.popup-come{
+  top:  350px;
+  visibility: visible;
+  transform: translate(0,-50%) scale(1);
+}
+.secondary-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popUp-Container img{
+  width: 80px;
+  position: relative;
+  top: -45px;
+}
+.popUp-Container{
+  background: transparent;
+  backdrop-filter: blur(15px);
+  border: 2px solid #d3d3d3;
+  border-radius: 15px;
+  text-align: center;
+  height: 35vh;
+  width: 23vw;
+}
+a.pop-btn{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px  70px 0;
+  width: 50%;
+  border-radius: 44px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+}

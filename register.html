@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register your details</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="main-container" >
+      <div class="sub-container" id="sub-container">
+        <div class="inline-content">
+          <form action="" onsubmit=" return false">
+            <h1>Register</h1>
+            <div class="names">
+              <div class="inbox1">
+                <input type="text" id="Input1" required />
+                <label for="" id="TransitionStop">First name</label>
+              </div>
+              <div class="inbox1">
+                <input type="text" required  id="Input2"/>
+                <label for="" id="TransitionStop">Last name</label>
+              </div>
+            </div>
+            <div class="inbox">
+              <input type="email" required id="Input3"/>
+              <label for="" id="TransitionStop">Email</label>
+            </div>
+            <div class="inbox">
+              <input type="password" required id="Input4"/>
+              <label for="" id="TransitionStop">Password</label>
+            </div>
+            <div class="inbox">
+              <input type="password" required id="Input5"/>
+              <label for="" id="TransitionStop">Confirm Password</label>
+            </div>
+
+            <p id="incorrect-password"></p>
+
+            <button  onclick="popupCome()" class="signin">Sign Up</button>
+            <div class="register">
+              <p>Already have account? <a href="logIn.html">Sign in</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="main-popup" id="main-popup">
+      <div class="secondary-container">
+          <div class="popUp-Container">
+            <img src="tick.png">
+            <h2>Congratulation!!</h2>
+            <p id="congo"></p>
+            <p>All done.</p>
+            <p>Your account has been created.</p>
+            <a href="logIn.html" class="pop-btn">OK</a></button>
+          </div>
+      </div>
+    </div>
+    <script src="public.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+// Define a global variable
+let globalValue;
+
+// Function to set the global value
+function setGlobalValue(value) {
+  globalValue = value;
+}
+
+// Function that uses the global value
+function useGlobalValue() {
+  console.log(globalValue);
+}
+
+// Usage
+setGlobalValue('Hello');
+useGlobalValue(); // Output: Hello
